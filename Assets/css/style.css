@@ -199,13 +199,14 @@ main{
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4); /* set cover a as 0.4 */
-    transition: background 1s ease; /* transition */
+    transition: background 0.5s ease; /* transition */
 }
 
 .report a:hover::before,
 .empolyee_common a:hover::before{
     background: rgba(0, 0, 0, 0); /* when hover on pic, cover is removed */
     cursor: pointer;
+    
 }
 
 .empolyee_common .details{
