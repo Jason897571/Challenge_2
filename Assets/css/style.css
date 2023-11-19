@@ -163,7 +163,10 @@ main{
 
 .employee1{
     background-image: url(../images/employee1.jpg);
+    background-size: cover;
+    position: relative;
 }
+
 .employee2{
     background-image: url(../images/employee1.jpg);
 }
@@ -182,6 +185,25 @@ main{
     width: 100%;
    
 }
+
+.report::before,
+.empolyee_common::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); /* set cover a as 0.4 */
+    transition: background 1s ease; /* transition */
+}
+
+.report:hover::before,
+.empolyee_common:hover::before{
+    background: rgba(0, 0, 0, 0); /* when hover on pic, cover is removed */
+    cursor: pointer;
+}
+
 .empolyee_common .details{
     position: relative;
     top: 60%;
@@ -192,16 +214,17 @@ main{
 }
 
 
-
 #footer .content{
     width: 90%;
     margin: var(--two_side_margin);
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
 #footer .content li a{
     font-size: 30px;
+    min-width: 30px;
     color: var(--main_text_color);
     border: 4px solid var(--main_text_color);
     /* No border for top, left and right */
@@ -211,7 +234,4 @@ main{
     /* remove underline */
     text-decoration: none;
 }
-
-
-
 
