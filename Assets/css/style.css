@@ -1,17 +1,19 @@
 :root{
     --header_color: #92cdca;
     --header_background_color: rgb(72, 71, 71);
+    --main_text_color:#445876;
+    --two_side_margin:40px;
 
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header{
     background-color: var(--header_background_color);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -75,7 +77,33 @@ header{
     
 }
 
+main{
+    margin: var(--two_side_margin);
+    
+}
 
+#introduction{
+    color: var(--main_text_color);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#introduction h2{
+    font-size: 50px;
+    text-align: right;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    border-right: 4px solid;
+}
+
+
+
+
+footer{
+    margin: var(--two_side_margin);
+}
 
 
 
