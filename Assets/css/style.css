@@ -124,11 +124,14 @@ main{
     flex-direction: column;
 }
 
+
+
 .report{
     background-image: url(../images/report.jpg);
     height: 400px;
     border: var(--box-border);
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -168,13 +171,13 @@ main{
 }
 
 .employee2{
-    background-image: url(../images/employee1.jpg);
+    background-image: url(../images/employee2.jpg);
 }
 .employee3{
-    background-image: url(../images/employee1.jpg);
+    background-image: url(../images/employee3.jpg);
 }
 .employee4{
-    background-image: url(../images/employee1.jpg);
+    background-image: url(../images/employee4.jpg);
 }
 
 
@@ -183,11 +186,12 @@ main{
     height: 250px;
     border: var(--box-border);
     width: 100%;
+    min-width: 400px;
    
 }
 
-.report::before,
-.empolyee_common::before{
+.report a::before,
+.empolyee_common a::before{
     content: '';
     position: absolute;
     top: 0;
@@ -198,8 +202,8 @@ main{
     transition: background 1s ease; /* transition */
 }
 
-.report:hover::before,
-.empolyee_common:hover::before{
+.report a:hover::before,
+.empolyee_common a:hover::before{
     background: rgba(0, 0, 0, 0); /* when hover on pic, cover is removed */
     cursor: pointer;
 }
@@ -235,3 +239,8 @@ main{
     text-decoration: none;
 }
 
+@media screen and (max-width: 2000px) {
+    #footer .content{
+        flex-wrap: wrap;
+    }
+}
