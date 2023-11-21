@@ -7,6 +7,7 @@
 
 }
 
+/* set overall format for the web page */
 *{
     margin: 0px;
     padding: 0px;
@@ -113,6 +114,8 @@ main{
     border-right: 4px solid;
 }
 
+
+/* the part in the right take up out of 90% */
 .content{
     width: 90%;
     
@@ -160,7 +163,7 @@ main{
     padding: 10px;
 }
 
-/* increase the size of the first line for each section */
+/* increase the size of the first line for each tag in the four images */
 .details :nth-child(1){
     font-size: 30px;
 }
@@ -191,6 +194,7 @@ main{
    
 }
 
+/* build a grey mask on pictures */
 .report a::before,
 .project_common a::before{
     content: '';
@@ -202,7 +206,7 @@ main{
     background: rgba(0, 0, 0, 0.4); /* set cover a as 0.4 */
     transition: background 0.5s ease; /* transition */
 }
-
+/* when the cursor hovers on images, imagers are brighter */
 .report a:hover::before,
 .project_common a:hover::before{
     background: rgba(0, 0, 0, 0); /* when hover on pic, cover is removed */
