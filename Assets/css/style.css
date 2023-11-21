@@ -165,24 +165,24 @@ main{
     font-size: 30px;
 }
 
-.employee1{
-    background-image: url(../images/employee1.jpg);
+.project1{
+    background-image: url(../images/project1.jpg);
     background-size: cover;
     position: relative;
 }
 
-.employee2{
-    background-image: url(../images/employee2.jpg);
+.project2{
+    background-image: url(../images/project2.jpg);
 }
-.employee3{
-    background-image: url(../images/employee3.jpg);
+.project3{
+    background-image: url(../images/project3.jpg);
 }
-.employee4{
-    background-image: url(../images/employee4.jpg);
+.project4{
+    background-image: url(../images/project4.jpg);
 }
 
 
-.empolyee_common{
+.project_common{
     position: relative;
     height: 250px;
     border: var(--box-border);
@@ -192,7 +192,7 @@ main{
 }
 
 .report a::before,
-.empolyee_common a::before{
+.project_common a::before{
     content: '';
     position: absolute;
     top: 0;
@@ -204,13 +204,13 @@ main{
 }
 
 .report a:hover::before,
-.empolyee_common a:hover::before{
+.project_common a:hover::before{
     background: rgba(0, 0, 0, 0); /* when hover on pic, cover is removed */
     cursor: pointer;
     
 }
 
-.empolyee_common .details{
+.project_common .details{
     position: relative;
     top: 60%;
     display: inline-block;
